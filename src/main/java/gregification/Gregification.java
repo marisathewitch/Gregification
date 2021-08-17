@@ -27,29 +27,45 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class Gregification {
 
     // Proxy for Gregification itself
-    @SidedProxy(modId = GFValues.MODID, serverSide = "gregification.proxy.CommonProxy", clientSide = "gregification.proxy.ClientProxy")
+    @SidedProxy(modId = GFValues.MODID,
+            serverSide = "gregification.proxy.CommonProxy",
+            clientSide = "gregification.proxy.ClientProxy")
     public static CommonProxy GregificationProxy;
 
     // Mystical Aggraditions Proxy
-    @SidedProxy(modId = GFValues.MODID, serverSide = "gregification.proxy.MysticalCommonProxy", clientSide = "gregification.proxy.MysticalClientProxy")
+    @SidedProxy(modId = GFValues.MODID,
+            serverSide = "gregification.proxy.MysticalCommonProxy",
+            clientSide = "gregification.proxy.MysticalClientProxy")
     public static MysticalCommonProxy MysticalProxy;
 
     // Forestry Proxy
-    @SidedProxy(modId = GFValues.MODID, serverSide = "gregification.proxy.ForestryCommonProxy", clientSide = "gregification.proxy.ForestryClientProxy")
+    @SidedProxy(modId = GFValues.MODID,
+            serverSide = "gregification.proxy.ForestryCommonProxy",
+            clientSide = "gregification.proxy.ForestryClientProxy")
     public static ForestryCommonProxy ForestryProxy;
 
     // Ex Nihilo Proxy
-    @SidedProxy(modId = GFValues.MODID, serverSide = "gregification.proxy.ExNihiloCommonProxy", clientSide = "gregification.proxy.ExNihiloCommonProxy")
+    @SidedProxy(modId = GFValues.MODID,
+            serverSide = "gregification.proxy.ExNihiloCommonProxy",
+            clientSide = "gregification.proxy.ExNihiloCommonProxy")
     public static ExNihiloCommonProxy ExNihiloProxy;
 
     // Open Computers Proxy
-    @SidedProxy(modId = GFValues.MODID, serverSide = "gregification.proxy.OCCommonProxy", clientSide = "gregification.proxy.OCClientProxy")
+    @SidedProxy(modId = GFValues.MODID,
+            serverSide = "gregification.proxy.OCCommonProxy",
+            clientSide = "gregification.proxy.OCClientProxy")
     public static OCCommonProxy OCProxy;
+
+    @SidedProxy(modId = GFValues.MODID,
+            serverSide = "gregification.proxy.TiConCommonProxy",
+            clientSide = "gregification.proxy.TiConCommonProxy")
+    public static TiConCommonProxy TiConProxy;
 
     @EventHandler
     public void preInit(FMLPreInitializationEvent event) {
         GFLog.init(event.getModLog());
         ExNihiloProxy.preInit();
+        TiConProxy.preInit();
     }
 
     @EventHandler

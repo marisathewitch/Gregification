@@ -1,5 +1,6 @@
 package gregification.util;
 
+import com.google.common.base.CaseFormat;
 import gregtech.api.unification.material.type.Material;
 import net.minecraft.util.ResourceLocation;
 
@@ -13,5 +14,9 @@ public class GFUtility {
 
     public static Predicate<Material> pred(Predicate<Material> in) {
         return in;
+    }
+
+    public static String toUpperCamel(String string) {
+        return CaseFormat.LOWER_UNDERSCORE.to(CaseFormat.UPPER_CAMEL, string);
     }
 }

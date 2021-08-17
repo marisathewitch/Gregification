@@ -7,9 +7,15 @@ public class GFLog {
 
     public static Logger baseLogger;
     public static Logger exNihiloLogger;
+    public static Logger ticonLogger;
 
     public static void init(Logger modLogger) {
         baseLogger = modLogger;
-        exNihiloLogger = LogManager.getLogger(String.format("%s: %s", baseLogger.getName(), "Ex Nihilo"));
+        exNihiloLogger = getLogger("Ex Nihilo");
+        ticonLogger = getLogger("Tinker's Construct");
+    }
+
+    private static Logger getLogger(String name) {
+        return LogManager.getLogger(String.format("%s: %s", baseLogger.getName(), name));
     }
 }
