@@ -3,17 +3,13 @@ item.gtPebble.basalt.name=Базальтовая галька
 item.gtPebble.black_granite.name=Галька черного гранита
 item.gtPebble.marble.name=Мраморная галька
 item.gtPebble.red_granite.name=Галька красного гранита
-
 item.material.oreprefix.oreChunk=%s кусок руды
 item.material.oreprefix.oreEnderChunk=%s кусок руды
 item.material.oreprefix.oreNetherChunk=%s кусок руды
 item.material.oreprefix.oreSandyChunk=Песчаный %s кусок руды
-
 recipemap.electric_sieve.name=Электрическое сито
-
 gregification.machine.sieve.steam.name=Паровой просеиватель
 gregification.machine.sieve.steam.tooltip=Tired of Right-Clicking all day?
-
 gregification.machine.sieve.lv.name=Базовый электрический просеиватель
 gregification.machine.sieve.mv.name=Улучшенный электрический просеиватель
 gregification.machine.sieve.hv.name=Улучшенный электрический просеиватель II
@@ -43,5 +39,30 @@ metaitem.electrode.obsidian.name=Обсидиановый электрод
 metaitem.electrode.orchid.name=Орхидейный электрод
 metaitem.electrode.rubber.name=Прорезиненный электрод
 metaitem.electrode.tin.name=Оловянный электрод
-
 item.gt.tool.scoop.name=%s совок
+gregification.machine.sieve.luv.tooltip=Вибрационная камера для частиц
+# Config lang keys
+gregification.config.base=Переключить модули
+for.bees.species.oil=Нефть
+gregification.machine.sieve.hv.tooltip=АФК симулятор
+for.bees.species.stickyresin=Резина
+item.gt.frame_working.name=Рабочая рамка
+item.gt.frame_stabilizing.name=Стабилизирующая рамка
+gregification.machine.sieve.uxv.tooltip=Что-то из ничего
+gregification.machine.sieve.uv.tooltip=Что-то из ничего
+gregification.machine.steam_sieve_steel.name=Паровой просеиватель высокого давления
+gregification.machine.steam_sieve_steel.tooltip=Устали от правого клика весь день?
+gregification.machine.sieve.iv.tooltip=Вибрационная камера для частиц
+item.gt.frame_mutagenic.name=Мутагенная рамка
+item.gt.frame_accelerated.name=Ускоряющая рамка
+gregification.machine.sieve.uev.tooltip=Что-то из ничего
+gregification.machine.sieve.lv.tooltip=АФК симулятор
+gregification.machine.sieve.opv.tooltip=Что-то из ничего
+gregification.machine.sieve.zpm.tooltip=Вибрационная камера для частиц
+for.bees.species.peat=Торф
+for.bees.species.clay=Глина
+gregification.machine.sieve.uhv.tooltip=Что-то из ничего
+for.bees.species.coal=Уголь
+gregification.machine.sieve.mv.tooltip=АФК симулятор
+gregification.machine.sieve.ev.tooltip=АФК симулятор
+gregification.machine.sieve.uiv.tooltip=Что-то из ничего
