@@ -80,3 +80,7 @@ for.bees.species.electrotine=Eletrotina
 for.bees.species.gold=Ouro
 for.bees.species.iron=Ferro
 for.bees.species.steel=Aço
+item.gt.frame_working.name=Moldura de Trabalho
+item.gt.frame_arborist.name=Moldura do Arborista
+item.gt.frame_decaying.name=Moldura em Decomposição
+item.gt.frame_slowing.name=Moldura de Lentidão
